@@ -1,0 +1,70 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "01c8ff79-d58f-4279-87a4-9c96d6e63366")
+	(paper "A4")
+	(lib_symbols)
+	(text "Inertial Magnetometer Unit (IMU)"
+		(exclude_from_sim no)
+<<<<<<< Updated upstream
+		(at 148.59 49.53 0)
+=======
+		(at 207.518 57.404 0)
+>>>>>>> Stashed changes
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "51a7fcd3-7a0f-41e5-9395-2af4ab8b4ab3")
+	)
+	(text "MRAM"
+		(exclude_from_sim no)
+<<<<<<< Updated upstream
+		(at 61.976 84.836 0)
+=======
+		(at 59.944 59.182 0)
+>>>>>>> Stashed changes
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "c62e9515-cb85-4dfe-8051-474f98c6b633")
+	)
+<<<<<<< Updated upstream
+	(text "Real Time Clock"
+		(exclude_from_sim no)
+		(at 62.992 48.768 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "e10bf4aa-0e44-47cb-a7cd-422c8dc0ce68")
+	)
+	(text "Temperature Sensor"
+		(exclude_from_sim no)
+		(at 96.52 48.768 0)
+=======
+	(text "Temperature Sensor"
+		(exclude_from_sim no)
+		(at 155.448 56.642 0)
+>>>>>>> Stashed changes
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+		)
+		(uuid "f7b0e2c3-79ee-425c-8fda-247e25d5b1dc")
+	)
+)
