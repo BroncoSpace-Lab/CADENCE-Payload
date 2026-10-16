@@ -2383,131 +2383,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "cadence imx8_carrier_board_symbol_library:VBAT"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VBAT"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VCC\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VBAT_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VBAT_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers
@@ -3071,7 +2946,7 @@
 	)
 	(text "I2C Address: 1000000"
 		(exclude_from_sim no)
-		(at 104.648 185.42 0)
+		(at 104.648 182.88 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3408,12 +3283,6 @@
 		(uuid "572fcb20-1344-41d8-a5cc-11b7c76a3fd8")
 	)
 	(junction
-		(at 86.36 187.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "572fe38e-2afc-44bd-afbc-897a2caf1ab3")
-	)
-	(junction
 		(at 281.94 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3430,6 +3299,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5a08e291-e195-4e34-a1db-526c42974541")
+	)
+	(junction
+		(at 86.36 185.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5cd5a21c-1d74-4757-b381-e3d04c49f315")
 	)
 	(junction
 		(at 284.48 99.06)
@@ -3454,12 +3329,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6cd383d0-234a-4fc3-b99b-e9c19a6f2b64")
-	)
-	(junction
-		(at 106.68 187.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6f36c6f0-a521-491b-a178-f996c7096559")
 	)
 	(junction
 		(at 265.43 184.15)
@@ -3943,7 +3812,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 187.96) (xy 86.36 187.96)
+			(xy 73.66 185.42) (xy 86.36 185.42)
 		)
 		(stroke
 			(width 0)
@@ -4050,16 +3919,6 @@
 			(type default)
 		)
 		(uuid "1cc6c9eb-4da2-45de-8d2b-8c2836529f04")
-	)
-	(wire
-		(pts
-			(xy 106.68 187.96) (xy 143.51 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1eb934b7-166b-463c-acf1-2795013ae895")
 	)
 	(wire
 		(pts
@@ -4383,16 +4242,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 187.96) (xy 86.36 195.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3eb0572c-a7f7-47d2-a2e9-89312d38fe97")
-	)
-	(wire
-		(pts
 			(xy 106.68 209.55) (xy 106.68 213.36)
 		)
 		(stroke
@@ -4570,16 +4419,6 @@
 			(type default)
 		)
 		(uuid "51cd7f35-bf08-423a-a8d7-1b65d5e255cd")
-	)
-	(wire
-		(pts
-			(xy 106.68 187.96) (xy 106.68 189.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "528f05d3-9fa5-4fe6-8aed-57759c18e1a7")
 	)
 	(wire
 		(pts
@@ -5043,6 +4882,16 @@
 	)
 	(wire
 		(pts
+			(xy 86.36 185.42) (xy 86.36 195.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83ce44aa-398d-4b4a-86fc-7925684794f7")
+	)
+	(wire
+		(pts
 			(xy 104.14 71.12) (xy 99.06 71.12)
 		)
 		(stroke
@@ -5160,6 +5009,16 @@
 			(type default)
 		)
 		(uuid "8cb4c479-6c3c-49e2-9f7e-8bc2b651e57f")
+	)
+	(wire
+		(pts
+			(xy 86.36 185.42) (xy 143.51 185.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d70f589-aa58-470d-9ada-5de0993b1bc3")
 	)
 	(wire
 		(pts
@@ -5320,16 +5179,6 @@
 			(type default)
 		)
 		(uuid "987cf323-2d56-4afa-89fe-98cf3802607a")
-	)
-	(wire
-		(pts
-			(xy 180.34 175.26) (xy 180.34 176.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9d00bbdc-e0d3-4dfa-8adc-cd5c2fe329f4")
 	)
 	(wire
 		(pts
@@ -5543,7 +5392,7 @@
 	)
 	(wire
 		(pts
-			(xy 143.51 195.58) (xy 143.51 187.96)
+			(xy 143.51 185.42) (xy 143.51 195.58)
 		)
 		(stroke
 			(width 0)
@@ -5840,16 +5689,6 @@
 			(type default)
 		)
 		(uuid "c73af251-dc98-40f2-88e1-0eb619464ec6")
-	)
-	(wire
-		(pts
-			(xy 86.36 187.96) (xy 106.68 187.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7f1a440-5486-4c3b-b653-264b384e4d1f")
 	)
 	(wire
 		(pts
@@ -6833,6 +6672,72 @@
 		)
 	)
 	(symbol
+		(lib_id "SCALES:VBAT")
+		(at 73.66 201.93 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1249a2b3-9774-4a79-aeef-a82cda1a4da4")
+		(property "Reference" "#PWR038"
+			(at 73.66 205.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBAT_SYS"
+			(at 73.66 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 73.66 201.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cbcb6653-5ae7-4c73-b3d5-b7913860e694")
+		)
+		(instances
+			(project "Payload_Controller_EM"
+				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/9a14df13-82ed-42c1-856b-06d9379026ee"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 355.6 227.33 0)
 		(unit 1)
@@ -7164,6 +7069,72 @@
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/9a14df13-82ed-42c1-856b-06d9379026ee"
 					(reference "#PWR0107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SCALES:VBAT")
+		(at 58.42 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2224651a-a27a-410f-a425-71ed71c33761")
+		(property "Reference" "#PWR040"
+			(at 58.42 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBAT_SYS"
+			(at 58.42 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 58.42 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e784bfd4-a6b3-48c2-884f-5820eb208a37")
+		)
+		(instances
+			(project "Payload_Controller_EM"
+				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/9a14df13-82ed-42c1-856b-06d9379026ee"
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -8015,7 +7986,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 367.03 73.66 0)
 			(effects
 				(font
@@ -8941,71 +8912,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 73.66 201.93 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "5a143923-d609-4356-aa53-b36c5136d9e9")
-		(property "Reference" "#PWR0157"
-			(at 73.66 205.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3.3V"
-			(at 73.66 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.66 201.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 201.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 73.66 201.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ad821b4c-4390-4d9b-bc88-9ace0e82fe98")
-		)
-		(instances
-			(project "Payload_Controller_EM"
-				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/9a14df13-82ed-42c1-856b-06d9379026ee"
-					(reference "#PWR0157")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 158.75 92.71 180)
 		(unit 1)
@@ -9142,72 +9048,6 @@
 		)
 	)
 	(symbol
-		(lib_id "cadence imx8_carrier_board_symbol_library:VBAT")
-		(at 241.3 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5c2d5ce6-a9e2-4a69-ae3b-badc0e7c7ed0")
-		(property "Reference" "#PWR0103"
-			(at 241.3 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VBAT"
-			(at 241.3 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 241.3 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 241.3 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 241.3 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a519ebf1-376d-4fa4-b217-df5d2dbc7de4")
-		)
-		(instances
-			(project "Payload_Controller_EM"
-				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/9a14df13-82ed-42c1-856b-06d9379026ee"
-					(reference "#PWR0103")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C")
 		(at 73.66 63.5 0)
 		(unit 1)
@@ -9271,72 +9111,6 @@
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/9a14df13-82ed-42c1-856b-06d9379026ee"
 					(reference "C46")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "SCALES:VBAT")
-		(at 180.34 175.26 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "645a9551-6bba-42eb-924d-5050c79d0d45")
-		(property "Reference" "#PWR033"
-			(at 180.34 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VBAT"
-			(at 180.34 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 180.34 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 180.34 175.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "33a86b6f-debb-466a-8da6-9a3ec5f13e00")
-		)
-		(instances
-			(project "Payload_Controller_EM"
-				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/9a14df13-82ed-42c1-856b-06d9379026ee"
-					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -9470,6 +9244,72 @@
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/9a14df13-82ed-42c1-856b-06d9379026ee"
 					(reference "C43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 323.85 186.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6d057f6f-4fc5-4d3e-9e99-9067b74aadd6")
+		(property "Reference" "#PWR031"
+			(at 323.85 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 323.85 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 323.85 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 323.85 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 323.85 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "81cf1fb3-90aa-4bc7-83b6-aaf7811bb842")
+		)
+		(instances
+			(project "Payload_Controller_EM"
+				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/9a14df13-82ed-42c1-856b-06d9379026ee"
+					(reference "#PWR031")
 					(unit 1)
 				)
 			)
@@ -10239,6 +10079,72 @@
 		)
 	)
 	(symbol
+		(lib_id "SCALES:VBAT")
+		(at 180.34 176.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a6a69fc4-71ec-44f1-a94b-c5e4064afbf0")
+		(property "Reference" "#PWR033"
+			(at 180.34 180.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBAT_SYS"
+			(at 180.34 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 180.34 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "573f97b5-e9b8-4adb-a9b0-3d4f4e0fdd77")
+		)
+		(instances
+			(project "Payload_Controller_EM"
+				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/9a14df13-82ed-42c1-856b-06d9379026ee"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 387.35 69.85 0)
 		(unit 1)
@@ -10305,7 +10211,7 @@
 	)
 	(symbol
 		(lib_id "SCALES:VBAT")
-		(at 73.66 187.96 0)
+		(at 73.66 185.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10314,7 +10220,7 @@
 		(fields_autoplaced yes)
 		(uuid "ae74c168-4446-437b-b6f4-c4863faa6358")
 		(property "Reference" "#PWR034"
-			(at 73.66 191.77 0)
+			(at 73.66 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10323,7 +10229,7 @@
 			)
 		)
 		(property "Value" "VBAT"
-			(at 73.66 182.88 0)
+			(at 73.66 180.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10331,7 +10237,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 73.66 187.96 0)
+			(at 73.66 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10340,7 +10246,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 187.96 0)
+			(at 73.66 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10349,7 +10255,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 73.66 187.96 0)
+			(at 73.66 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10465,7 +10371,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 184.15 71.12 0)
 			(effects
 				(font
@@ -10878,17 +10784,16 @@
 		)
 	)
 	(symbol
-		(lib_id "cadence imx8_carrier_board_symbol_library:VBAT")
-		(at 58.42 57.15 0)
+		(lib_id "power:+3.3V")
+		(at 106.68 189.23 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bf8c27bb-f431-4a54-9d09-28ed9ce0ce5b")
-		(property "Reference" "#PWR0106"
-			(at 58.42 60.96 0)
+		(uuid "bf9cbf02-3506-4c56-b8f7-4610b67003a9")
+		(property "Reference" "#PWR039"
+			(at 106.68 193.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10896,8 +10801,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VBAT"
-			(at 58.42 52.07 0)
+		(property "Value" "+3.3V"
+			(at 110.744 187.452 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10905,7 +10810,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 58.42 57.15 0)
+			(at 106.68 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10914,7 +10819,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 58.42 57.15 0)
+			(at 106.68 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10922,8 +10827,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 58.42 57.15 0)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 106.68 189.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10932,12 +10837,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "cf36494b-ee1e-4150-82ad-93e54632efb3")
+			(uuid "1f6be70c-53d0-43da-b5c8-2f9e12231661")
 		)
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/9a14df13-82ed-42c1-856b-06d9379026ee"
-					(reference "#PWR0106")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -10970,7 +10875,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 356.87 73.66 0)
 			(effects
 				(font
@@ -11655,7 +11560,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 173.99 71.12 0)
 			(effects
 				(font
@@ -11844,16 +11749,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 323.85 186.69 0)
+		(lib_id "SCALES:VBAT")
+		(at 241.3 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "eec038e8-ee31-477b-aa9a-4fc2be90a53a")
-		(property "Reference" "#PWR031"
-			(at 323.85 190.5 0)
+		(fields_autoplaced yes)
+		(uuid "f3dc7c73-5560-4bc0-afb3-fe666ec7a55e")
+		(property "Reference" "#PWR099"
+			(at 241.3 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11861,17 +11767,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+3V3"
-			(at 321.31 182.88 0)
+		(property "Value" "VBAT_SYS"
+			(at 241.3 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 323.85 186.69 0)
+			(at 241.3 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11880,7 +11785,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 323.85 186.69 0)
+			(at 241.3 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11888,8 +11793,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 323.85 186.69 0)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 241.3 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11898,12 +11803,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "4d79868f-6293-4ee8-8e68-9ebd431dfb89")
+			(uuid "3b1ef6d3-d668-4be8-bb6a-51cae5893f42")
 		)
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/9a14df13-82ed-42c1-856b-06d9379026ee"
-					(reference "#PWR031")
+					(reference "#PWR099")
 					(unit 1)
 				)
 			)
