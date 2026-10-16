@@ -48,36 +48,11 @@
         "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.125
+          "min_clearance": 0.5
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [
-        [
-          "text_height|120091200|78028800|e506176e-e735-4802-8c2c-a38bf8314e14|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "text_height|124137200|85737600|16aee8ad-ba64-49ac-bfcc-048ae464b5c3|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "text_thickness|120091200|78028800|e506176e-e735-4802-8c2c-a38bf8314e14|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "text_thickness|124137200|85737600|16aee8ad-ba64-49ac-bfcc-048ae464b5c3|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "text_thickness|162168843|42877798|19c03d07-52d6-4bea-b6d3-48dd2f524801|00000000-0000-0000-0000-000000000000",
-          ""
-        ],
-        [
-          "text_thickness|98958400|80619600|863fb454-6e4d-4e4f-8f9b-5a5d7954d4cb|00000000-0000-0000-0000-000000000000",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -512,8 +487,8 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
-      "pos_files": "Payload_Controller_EM_Gerber_Files/",
+      "plot": "../../../../../../",
+      "pos_files": "../../../../../../",
       "specctra_dsn": "",
       "step": "",
       "svg": "",
@@ -523,7 +498,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "..\\..\\..\\..\\..\\..\\Payload_Controller_EM_bom.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",

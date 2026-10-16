@@ -1,4 +1,4 @@
-25609937378418679
+25615286421505228
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -60368,6 +60368,13 @@ Imports
 4
 4
 Imports
+CONN_381-009_NRC
+
+381-009-112L565 
+0
+9
+9
+Imports
 JST_SM13B-GHS-TB_LF__SN_
 
 
@@ -60381,6 +60388,13 @@ MOLEX_1050170001
 0
 11
 11
+Imports
+NORCOMP_380-009-213L001
+
+
+0
+9
+9
 Imports
 SON50P200X300X100-9N
 
@@ -89277,6 +89291,13 @@ TO-264-5 Vertical RM 3.81mm
 0
 5
 5
+PinHeader
+PinHeader_2x03_P2.00mm_Vertical
+Hirose DF11 through hole, DF11-6DP-2DSA, 3 Pins per row (https://www.hirose.com/product/document?clcode=&productname=&series=DF11&documenttype=Catalog&lang=en&documentid=D31688_en), generated with kicad-footprint-generator
+connector Hirose DF11 vertical
+0
+6
+6
 Potentiometer_SMD
 Potentiometer_ACP_CA6-VSMD_Vertical
 Potentiometer, vertical, ACP CA6-VSMD, http://www.acptechnologies.com/wp-content/uploads/2017/06/01-ACP-CA6.pdf
