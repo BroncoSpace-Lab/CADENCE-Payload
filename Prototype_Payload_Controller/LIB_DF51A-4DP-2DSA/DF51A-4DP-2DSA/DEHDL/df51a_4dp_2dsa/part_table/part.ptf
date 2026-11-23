@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'DF51A_4DP_2DSA'
+CLASS = IO
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "ARROW_PART_NUMBER", "ARROW_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Hirose", "DF51A-4DP-2DSA" (!) = "", "SHDR4W60P200X200_2X2_1110X730X870P", "Header, Shrouded - Straight PTH Box", "798-DF51A-4DP-2DSA", "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/DF51A-4DP-2DSA?qs=MLItCLRbWsw154eoU7l7xw%3D%3D", "", "", "Headers & Wire Housings 4P 2R STRAIGHT HEADER TIN", "https://www.hirose.com/en/product/document?clcode=CL0543-5015-0-00&productname=DF51A-4DP-2DSA&series=DF51&documenttype=2DDrawing&lang=en&documentid=0001126053", "8.7 mm"
+END_PART
+
+END.

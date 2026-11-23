@@ -1,0 +1,13 @@
+(unit MM)
+
+(package "DF51A-4DP-2DSA"
+    (type UNDEF)
+    (uver 2)
+    (cuser "SamacSys")
+    (uuser "SamacSys")
+    (utime 2021-09-02-06:03:55)
+    (mountForm default
+        (footprintRef "SHDR4W60P200X200_2X2_1110X730X870P")
+        (spec "System")
+    )
+)

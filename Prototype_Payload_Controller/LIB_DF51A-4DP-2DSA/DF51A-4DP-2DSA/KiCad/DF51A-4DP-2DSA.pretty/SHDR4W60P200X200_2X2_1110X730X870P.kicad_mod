@@ -1,0 +1,231 @@
+(footprint "SHDR4W60P200X200_2X2_1110X730X870P"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(descr "DF51A-4DP-2DSA_2021")
+	(tags "Connector")
+	(property "Reference" "J**"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(uuid "495007be-8bb4-4c62-9978-0ffb0c2a9681")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Value" "SHDR4W60P200X200_2X2_1110X730X870P"
+		(at 0 0 0)
+		(layer "F.SilkS")
+		(hide yes)
+		(uuid "47f29857-0eeb-414e-b733-d4ff250a48ad")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "3322cdbe-e02d-4a41-82a2-21747ca56c90")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "5963f5ff-1017-4c14-9779-e630c78ce610")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(fp_line
+		(start -6.85 -4.95)
+		(end 4.55 -4.95)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "43d4ed2f-43c0-4471-8339-981b57cb3f79")
+	)
+	(fp_line
+		(start -6.85 2.65)
+		(end -6.85 -4.95)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "89db74e1-cedf-4fc5-93bd-0b383d59568c")
+	)
+	(fp_line
+		(start 0 2.65)
+		(end -6.85 2.65)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "21cf07d8-6e77-4500-8c4a-5b49fcdef4c5")
+	)
+	(fp_line
+		(start 4.55 -4.95)
+		(end 4.55 0)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "ffd2fa0e-c758-487d-81e5-c647c32a7cb0")
+	)
+	(fp_line
+		(start -7.1 -5.2)
+		(end 4.8 -5.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "146ebb66-9284-464b-b5d4-e190f083ad0f")
+	)
+	(fp_line
+		(start -7.1 2.9)
+		(end -7.1 -5.2)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "0fc150ee-2299-4713-8db1-941887a310dd")
+	)
+	(fp_line
+		(start 4.8 -5.2)
+		(end 4.8 2.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "33f83153-6436-4f28-ba9d-66c366ff4d10")
+	)
+	(fp_line
+		(start 4.8 2.9)
+		(end -7.1 2.9)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "8059c3d3-5c69-4d33-b226-f1d957d58497")
+	)
+	(fp_line
+		(start -6.85 -4.95)
+		(end 4.55 -4.95)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6c20844f-469b-405c-9b3a-a2c3201e897f")
+	)
+	(fp_line
+		(start -6.85 2.65)
+		(end -6.85 -4.95)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "38738f0c-909a-41b2-85d8-df9f088e1763")
+	)
+	(fp_line
+		(start 4.55 -4.95)
+		(end 4.55 2.65)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "92d1ea26-d123-4ff8-8860-e9b2be0e0adc")
+	)
+	(fp_line
+		(start 4.55 2.65)
+		(end -6.85 2.65)
+		(stroke
+			(width 0.1)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "6255d549-f522-48e9-8652-fcf22ab755ad")
+	)
+	(fp_text user "${REFERENCE}"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(uuid "5142b4dc-0810-43bd-9219-0aa2e3a0e98a")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+			)
+		)
+	)
+	(pad "1" thru_hole rect
+		(at 0 0)
+		(size 1.575 1.575)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "f72d5c49-94ab-482f-ba91-c04ff1b11f36")
+	)
+	(pad "2" thru_hole circle
+		(at 0 -2)
+		(size 1.575 1.575)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "7a075f92-1e26-4acc-9176-8b8550fde32e")
+	)
+	(pad "3" thru_hole circle
+		(at -2 0)
+		(size 1.575 1.575)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "6f60a2d7-fa43-47b4-8baa-91dfe8044d97")
+	)
+	(pad "4" thru_hole circle
+		(at -2 -2)
+		(size 1.575 1.575)
+		(drill 1.05)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "782752c7-2e0b-4def-8d04-c7a8e43dfd77")
+	)
+	(embedded_fonts no)
+	(model "DF51A-4DP-2DSA.stp"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)

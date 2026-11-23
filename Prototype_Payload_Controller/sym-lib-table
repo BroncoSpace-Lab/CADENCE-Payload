@@ -3,4 +3,8 @@
   (lib (name "VT01-RM")(type "KiCad")(uri "${KIPRJMOD}/RM-VT01A.kicad_sym")(options "")(descr ""))
   (lib (name "SCALES")(type "KiCad")(uri "${KIPRJMOD}/imx8_carrier_board_symbol_library.kicad_sym")(options "")(descr ""))
   (lib (name "CADENCE")(type "KiCad")(uri "${KIPRJMOD}/cadence carrier custom symbols.kicad_sym")(options "")(descr ""))
+  (lib (name "TMUX7208PWR")(type "KiCad")(uri "${KIPRJMOD}/TMUX7208PWR.kicad_sym")(options "")(descr ""))
+  (lib (name "BM05B-GHS-TBT_LF__SN__N_")(type "KiCad")(uri "${KIPRJMOD}/BM05B-GHS-TBT_LF__SN__N_/BM05B-GHS-TBT_LF__SN__N_.kicad_sym")(options "")(descr ""))
+  (lib (name "DF51A-4DP-2DSA")(type "KiCad")(uri "${KIPRJMOD}/LIB_DF51A-4DP-2DSA/DF51A-4DP-2DSA/KiCad/DF51A-4DP-2DSA.kicad_sym")(options "")(descr ""))
+  (lib (name "LT1618EMS_PBF")(type "KiCad")(uri "${KIPRJMOD}/LT1618EMS_PBF/LT1618EMS_PBF.kicad_sym")(options "")(descr ""))
 )

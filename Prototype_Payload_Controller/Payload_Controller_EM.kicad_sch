@@ -4,6 +4,12 @@
 	(generator_version "9.0")
 	(uuid "866a965d-c307-40b7-9977-69e77fc0dc82")
 	(paper "A3")
+	(title_block
+		(title "Payload Controller")
+		(company "Bronco Space Lab")
+		(comment 1 "   Pragun Bethapudi")
+		(comment 2 "By Angelo Duenas")
+	)
 	(lib_symbols
 		(symbol "SCALES:MountingHole_Pad_M2.5_2.7mm"
 			(pin_numbers
@@ -214,185 +220,193 @@
 			(embedded_fonts no)
 		)
 	)
-	(junction
-		(at 318.77 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "44d91c22-25f6-4a90-b7bb-c123687e75d3")
-	)
-	(junction
-		(at 318.77 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4ef25b5e-70ad-4249-a195-da3ce3a94573")
-	)
-	(junction
-		(at 322.58 107.95)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6dfa56e3-5413-444c-917f-175ec54d9346")
-	)
-	(junction
-		(at 322.58 111.76)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "cf9d0174-c7e8-4b6c-af10-a4960f8d0f1f")
-	)
-	(junction
-		(at 313.69 104.14)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d5035c31-dd82-4ba4-8b58-8dad7c9466f2")
-	)
-	(wire
-		(pts
-			(xy 322.58 111.76) (xy 322.58 114.3)
-		)
+	(rectangle
+		(start 309.88 198.882)
+		(end 361.95 237.49)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "042f2d66-8173-4297-acb4-106544a26bcd")
-	)
-	(wire
-		(pts
-			(xy 299.72 107.95) (xy 318.77 107.95)
+		(fill
+			(type none)
 		)
+		(uuid 0200fdf3-8778-4e2d-b70a-6e0b455bad70)
+	)
+	(rectangle
+		(start 44.958 17.272)
+		(end 150.368 33.782)
+		(stroke
+			(width 1.016)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 58f5a164-1559-4e0c-b50a-79ca91374614)
+	)
+	(rectangle
+		(start 12.7 39.37)
+		(end 184.15 284.48)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 983bb84f-be63-48ff-bde5-56bf529aa1bc)
+	)
+	(rectangle
+		(start 212.09 38.1)
+		(end 361.95 237.49)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "08a384d8-ef8e-4e51-ab10-fe5c30fc4b1e")
+		(fill
+			(type none)
+		)
+		(uuid e5375565-12c4-4806-a419-500be8ff7307)
 	)
-	(wire
-		(pts
-			(xy 322.58 107.95) (xy 322.58 111.76)
+	(text "Board Description"
+		(exclude_from_sim no)
+		(at 97.79 25.4 0)
+		(effects
+			(font
+				(size 7.62 7.62)
+				(thickness 2.032)
+				(bold yes)
+			)
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18785164-79b9-40ba-a7db-3cbe9daf3702")
+		(uuid "01c7912e-1db9-42c7-beee-8f9379036442")
 	)
-	(wire
-		(pts
-			(xy 232.918 147.32) (xy 252.73 147.32)
+	(text "Mounting Holes"
+		(exclude_from_sim no)
+		(at 335.534 201.676 0)
+		(effects
+			(font
+				(size 1.905 1.905)
+			)
 		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "18d88e25-1c2f-4754-a1b3-7bc185ba6ff3")
+		(uuid "059bb585-f3d4-49da-86a1-2729a9719481")
 	)
-	(wire
-		(pts
-			(xy 299.72 104.14) (xy 313.69 104.14)
+	(text "Block Diagram"
+		(exclude_from_sim no)
+		(at 237.998 43.434 0)
+		(effects
+			(font
+				(size 4.445 4.445)
+				(thickness 0.635)
+				(bold yes)
+			)
 		)
-		(stroke
-			(width 0)
-			(type default)
+		(uuid "61c893ce-1bd8-4ab4-b9da-cff241862768")
+	)
+	(text "The CADENCE-SWANS Payload Controller manages RADFET-based radiation measurements\naboard a 12U CubeSat.\n\nThis board contains:\n\nMicrochip ATSAMV71Q21B-A microcontroller\n5 Varadis RM-VT01-A RADFET channels (1 onboard, 4 external)\nTMUX7208PWR 8:1 analog multiplexer\nADS8695IPWR 18-bit SAR ADC (500 kSPS maximum)\nEverspin MR4A08BCYS35 16-Mbit (2-MiB) nonvolatile MRAM\nI2C temperature, inertial, magnetic, and power monitoring\nUART-to-RS-422 Flight Computer interface\n+3.3V, +5V, and nominal +12V power rails\n\nThe MCU controls each RADFET's enable, R1, and R2 signals; selects analog\nchannels through the TMUX7208; receives 18-bit ADC data over SPI;\nstores measurements in parallel MRAM; and transmits Flight Computer telemetry.\n\n\nPower Requirements per Subsystem\n\nMCU: +3.3V I/O, internally regulated +1.2V core domain\nMRAM: +3.3V\nI2C sensors and INA219 power monitor: +3.3V\nADS8695 ADC: +5V AVDD, +3.3V DVDD\nTMUX7208 analog multiplexer: +12V analog supply, +3.3V GPIO controls\nRS-422 transceiver: +5V\nRADFET channels: +12V; 2mA typical supply current per enabled module\nRADFET disabled supply current: 0.1uA maximum per module\n\nTotal payload input current: 0.5A expected (spacecraft ICD)\nInput power at 0.5A: 4.50W at 9.0V; 6.22W at 12.435V\nFive simultaneously enabled RADFETs: 10mA typical, or 120mW at +12V.\n+3.3V and +5V rail currents vary with MCU operating state and peripheral activity.\n\n\nVBAT - Power Input\n\nSource: Spacecraft BMS/EPS, unregulated\nInput voltage: 9.0V to 12.435V\nExpected input current: 0.5A\nPower input: J14, two VBAT contacts and two GND contacts\nMonitored input: VBAT -> 0.002-ohm shunt -> VBAT_SYS, measured by INA219\nGenerated rails: +3.3V and +5V via LT8612 synchronous buck converters;\nnominal +12V via LT1618 step-up converter\n+12V feedback divider: 909kOhm / 107kOhm, yielding 11.99V nominal\nLT1618 input current sense: 0.1-ohm resistor, approximately 0.5A limit\n+12V rail behavior: the LT1618 boosts lower input voltages to its setpoint.\nWhen VBAT_SYS exceeds the setpoint, the boost-only circuit cannot step down;\nits output can instead be supplied through the inductor and output diode.\n\n\nI2C0 Addresses\n\nLIS2MDL Magnetometer: 0x1E\nINA219AIDCNR Power Monitor: 0x40\nTMP112AIDRLR Temperature Sensor: 0x48\nLSM6DSOXTR Accelerometer/Gyroscope: 0x6A\n\nAll addresses are 7-bit.\n\nAddress pin connections:\nINA219: A0 = GND, A1 = GND\nTMP112: ADD0 = GND\nLSM6DSOX: SA0 = GND; CS = +3.3V for I2C\nLIS2MDL: fixed address 0x1E; CS = +3.3V for I2C"
+		(exclude_from_sim no)
+		(at 14.732 42.164 0)
+		(effects
+			(font
+				(size 2.2352 2.2352)
+			)
+			(justify left top)
 		)
-		(uuid "27fceead-da16-41e5-94e3-e641ec97f2b4")
+		(uuid "eea8de80-929a-4199-b7b9-b6fcbb1f740e")
+	)
+	(junction
+		(at 306.07 104.648)
+		(diameter 0)
+		(color 0 0 132 1)
+		(uuid "1044d55d-fa98-4e8e-ad43-35fec710c5a8")
+	)
+	(junction
+		(at 312.42 108.458)
+		(diameter 0)
+		(color 0 0 132 1)
+		(uuid "72c26dd7-34b4-4b43-9afb-537b67f29e92")
 	)
 	(bus
 		(pts
-			(xy 316.8053 150.6692) (xy 331.4106 150.6692)
+			(xy 278.13 177.8) (xy 278.13 190.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2bd6743c-fe82-41eb-9d66-19c91988a8a7")
-	)
-	(wire
-		(pts
-			(xy 318.77 111.76) (xy 322.58 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42833f73-9230-4bd0-8c5e-bff3c65197da")
-	)
-	(wire
-		(pts
-			(xy 313.69 104.14) (xy 327.152 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "46321b8d-3bd9-4369-8cb8-aa60b4a87d5d")
-	)
-	(wire
-		(pts
-			(xy 322.58 114.3) (xy 318.77 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "481379b2-f461-42c2-b6bf-7da78ad61ab7")
+		(uuid "19798852-7c97-4d52-a7e0-ab6d0c087219")
 	)
 	(bus
 		(pts
-			(xy 278.13 177.292) (xy 278.13 208.28)
+			(xy 299.72 132.08) (xy 311.15 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4aa02443-afa6-4612-99c0-e53ae6db1413")
-	)
-	(wire
-		(pts
-			(xy 232.918 151.13) (xy 252.73 151.13)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55c553c1-207b-4e3f-ada6-4e5a91f3b91a")
+		(uuid "227352a0-8c8b-4e62-b395-aa77ae1a620e")
 	)
 	(bus
 		(pts
-			(xy 299.72 136.652) (xy 316.8053 136.652)
+			(xy 299.72 137.16) (xy 311.15 137.16)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "62821bfa-5cb8-4e37-a65b-7382601b9947")
-	)
-	(wire
-		(pts
-			(xy 318.77 107.95) (xy 322.58 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67a63a4f-0085-43b5-be1e-1bd7e7721c48")
-	)
-	(wire
-		(pts
-			(xy 318.77 111.76) (xy 318.77 114.3)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b6cece2-69b1-40bc-9712-518caa6144b6")
+		(uuid "23507c3b-c4aa-4260-8062-0aef37c83f6d")
 	)
 	(bus
 		(pts
-			(xy 316.8053 136.652) (xy 316.8053 150.6692)
+			(xy 274.32 177.8) (xy 274.32 190.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "70af1d33-d04e-40fe-8d4e-e4d4a3ad5f1d")
+		(uuid "40f5661e-a5be-4268-ab07-e9aaa8a5d61a")
+	)
+	(wire
+		(pts
+			(xy 238.506 149.86) (xy 252.73 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 132 1)
+		)
+		(uuid "482c8938-3e5b-4614-a015-e9ad88d3eff3")
+	)
+	(wire
+		(pts
+			(xy 306.07 77.978) (xy 306.07 104.648)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 132 1)
+		)
+		(uuid "4984f1b4-7c4a-494f-897e-d498914cdfcc")
+	)
+	(wire
+		(pts
+			(xy 312.42 108.458) (xy 317.5 108.458)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 132 1)
+		)
+		(uuid "4a734824-925b-4424-acac-2852490db43b")
+	)
+	(bus
+		(pts
+			(xy 281.94 177.8) (xy 281.94 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58718dee-52f2-421f-8097-a2fff74e47e2")
 	)
 	(bus
 		(pts
@@ -406,147 +420,93 @@
 	)
 	(bus
 		(pts
-			(xy 299.72 141.732) (xy 309.9085 141.732)
+			(xy 270.51 177.8) (xy 270.51 190.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "75c6203f-211d-4d9a-b2c0-c86f5df97bdc")
-	)
-	(bus
-		(pts
-			(xy 309.9085 141.732) (xy 309.9085 155.7492)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8917af9c-185f-41cc-880c-007a6ea47018")
+		(uuid "9a57a63b-326c-45aa-b768-cb2700dd5823")
 	)
 	(wire
 		(pts
-			(xy 313.69 69.85) (xy 313.69 104.14)
+			(xy 312.42 77.978) (xy 312.42 108.458)
 		)
 		(stroke
 			(width 0)
 			(type default)
+			(color 0 0 132 1)
 		)
-		(uuid "aef2933a-1467-4a12-b9cd-be0f40b0be38")
-	)
-	(bus
-		(pts
-			(xy 281.94 177.292) (xy 281.94 208.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b30d487c-f04d-42a5-a929-25a1e7527faf")
+		(uuid "ae23824e-3771-4298-b64f-dc6c17437359")
 	)
 	(wire
 		(pts
-			(xy 318.77 69.85) (xy 318.77 107.95)
+			(xy 284.48 61.468) (xy 295.91 61.468)
 		)
 		(stroke
 			(width 0)
 			(type default)
+			(color 0 0 132 1)
 		)
-		(uuid "ba1b1bb6-c457-4aa5-be03-c5fed5bd2d8e")
-	)
-	(bus
-		(pts
-			(xy 274.32 177.292) (xy 274.32 208.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "be6d6e4b-2a83-46b6-bf83-a5c68ff23e6c")
-	)
-	(bus
-		(pts
-			(xy 270.51 177.292) (xy 270.51 208.28)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4eeb051-c4fd-45ab-9453-751103f50fab")
+		(uuid "c2650e6b-99a8-4e4f-8c54-8d62a2120874")
 	)
 	(wire
 		(pts
-			(xy 318.77 107.95) (xy 318.77 111.76)
+			(xy 252.73 147.32) (xy 238.506 147.32)
 		)
 		(stroke
 			(width 0)
 			(type default)
+			(color 0 0 132 1)
 		)
-		(uuid "c5d7a340-8de2-4a34-a62b-b66caed3815e")
-	)
-	(bus
-		(pts
-			(xy 321.3572 131.572) (xy 321.3572 145.5892)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c99a91f2-564d-417e-94c0-483d158f6cfd")
-	)
-	(bus
-		(pts
-			(xy 321.3572 145.5892) (xy 331.4106 145.5892)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d07cdc82-a26d-4155-80d8-8041ea4f5a2a")
-	)
-	(bus
-		(pts
-			(xy 309.9085 155.7492) (xy 331.4106 155.7492)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df7a796f-d461-46a1-8c0f-bab29ea0b1b7")
+		(uuid "d98be351-5dea-4d70-8243-469e5704a54d")
 	)
 	(wire
 		(pts
-			(xy 284.48 55.88) (xy 300.99 55.88)
+			(xy 299.72 108.458) (xy 312.42 108.458)
 		)
 		(stroke
 			(width 0)
 			(type default)
+			(color 0 0 132 1)
 		)
-		(uuid "ebf8b7ad-aa55-4ee2-9d56-8e4bb3ed2c8d")
-	)
-	(bus
-		(pts
-			(xy 299.72 131.572) (xy 321.3572 131.572)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec1b75dd-071f-4287-9e1c-444283f24a1a")
+		(uuid "e42d91c5-4966-44dd-8a9d-440b9f420d92")
 	)
 	(wire
 		(pts
-			(xy 322.58 107.95) (xy 327.152 107.95)
+			(xy 299.72 104.648) (xy 306.07 104.648)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 132 1)
+		)
+		(uuid "f3c3f2f9-59d8-4fd3-9116-659c820a7df1")
+	)
+	(wire
+		(pts
+			(xy 306.07 104.648) (xy 317.5 104.648)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 132 1)
+		)
+		(uuid "f732bbca-1b24-4de6-ba84-e3632c2fbc69")
+	)
+	(bus
+		(pts
+			(xy 299.72 142.24) (xy 311.15 142.24)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fd6dc833-ee1b-425a-8e21-5aa307d9e8b8")
+		(uuid "ffb2bc67-39cc-4ce4-a612-5b99e40827d2")
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 323.85 208.28 0)
+		(at 328.93 229.87 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -554,8 +514,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "131dc62b-d501-4b03-a66f-f8b5613bcae5")
-		(property "Reference" "#PWR037"
-			(at 323.85 214.63 0)
+		(property "Reference" "#PWR04"
+			(at 328.93 236.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -564,7 +524,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 323.85 213.36 0)
+			(at 328.93 234.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -572,7 +532,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 323.85 208.28 0)
+			(at 328.93 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -581,7 +541,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 323.85 208.28 0)
+			(at 328.93 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -590,7 +550,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 323.85 208.28 0)
+			(at 328.93 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -604,7 +564,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
-					(reference "#PWR037")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -612,7 +572,7 @@
 	)
 	(symbol
 		(lib_id "SCALES:MountingHole_Pad_M2.5_2.7mm")
-		(at 323.85 182.88 0)
+		(at 313.69 208.28 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -621,7 +581,7 @@
 		(fields_autoplaced yes)
 		(uuid "1fe4c9f1-9ef9-48ba-882e-10d79fd17bca")
 		(property "Reference" "H1"
-			(at 326.39 180.3399 0)
+			(at 316.23 205.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -630,7 +590,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad_M2.5_2.7mm"
-			(at 326.39 182.8799 0)
+			(at 316.23 208.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -639,7 +599,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad"
-			(at 323.85 182.88 0)
+			(at 313.69 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -648,7 +608,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 323.85 182.88 0)
+			(at 313.69 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -657,7 +617,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection as pad named MP"
-			(at 323.85 182.88 0)
+			(at 313.69 208.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -679,7 +639,7 @@
 	)
 	(symbol
 		(lib_id "SCALES:MountingHole_Pad_M2.5_2.7mm")
-		(at 323.85 190.5 0)
+		(at 318.77 214.63 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -688,7 +648,7 @@
 		(fields_autoplaced yes)
 		(uuid "66d150dd-c18b-4949-bfe5-64cc2cfaf624")
 		(property "Reference" "H2"
-			(at 326.39 187.9599 0)
+			(at 321.31 212.0899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -697,7 +657,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad_M2.5_2.7mm"
-			(at 326.39 190.4999 0)
+			(at 321.31 214.6299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -706,7 +666,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad"
-			(at 323.85 190.5 0)
+			(at 318.77 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -715,7 +675,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 323.85 190.5 0)
+			(at 318.77 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -724,7 +684,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection as pad named MP"
-			(at 323.85 190.5 0)
+			(at 318.77 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -746,16 +706,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 323.85 193.04 0)
+		(at 318.77 217.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "67a7b474-371f-466e-8730-ed83e237bfaa")
-		(property "Reference" "#PWR035"
-			(at 323.85 199.39 0)
+		(property "Reference" "#PWR02"
+			(at 318.77 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -764,7 +723,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 323.85 198.12 0)
+			(at 318.77 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -772,7 +731,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 323.85 193.04 0)
+			(at 318.77 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -781,7 +740,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 323.85 193.04 0)
+			(at 318.77 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -790,7 +749,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 323.85 193.04 0)
+			(at 318.77 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -804,7 +763,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
-					(reference "#PWR035")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -812,7 +771,7 @@
 	)
 	(symbol
 		(lib_id "SCALES:MountingHole_Pad_M2.5_2.7mm")
-		(at 323.85 198.12 0)
+		(at 323.85 220.98 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -821,7 +780,7 @@
 		(fields_autoplaced yes)
 		(uuid "72044153-8304-4292-a5e1-38fc7bdd6e94")
 		(property "Reference" "H3"
-			(at 326.39 195.5799 0)
+			(at 326.39 218.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -830,7 +789,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad_M2.5_2.7mm"
-			(at 326.39 198.1199 0)
+			(at 326.39 220.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -839,7 +798,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad"
-			(at 323.85 198.12 0)
+			(at 323.85 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -848,7 +807,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 323.85 198.12 0)
+			(at 323.85 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -857,7 +816,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection as pad named MP"
-			(at 323.85 198.12 0)
+			(at 323.85 220.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -879,7 +838,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 323.85 200.66 0)
+		(at 323.85 223.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -887,8 +846,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "886facc9-4fe6-4a0e-af6b-3d445d1c30f1")
-		(property "Reference" "#PWR036"
-			(at 323.85 207.01 0)
+		(property "Reference" "#PWR03"
+			(at 323.85 229.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -897,7 +856,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 323.85 205.74 0)
+			(at 323.85 228.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -905,7 +864,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 323.85 200.66 0)
+			(at 323.85 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -914,7 +873,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 323.85 200.66 0)
+			(at 323.85 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -923,7 +882,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 323.85 200.66 0)
+			(at 323.85 223.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -937,7 +896,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
-					(reference "#PWR036")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -945,16 +904,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 323.85 185.42 0)
+		(at 313.69 210.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a155efa9-7a55-45bd-9c4c-3ccb8b6bc072")
-		(property "Reference" "#PWR05"
-			(at 323.85 191.77 0)
+		(property "Reference" "#PWR01"
+			(at 313.69 217.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -963,7 +921,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 323.85 190.5 0)
+			(at 313.69 214.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -971,7 +929,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 323.85 185.42 0)
+			(at 313.69 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -980,7 +938,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 323.85 185.42 0)
+			(at 313.69 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -989,7 +947,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 323.85 185.42 0)
+			(at 313.69 210.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1003,7 +961,7 @@
 		(instances
 			(project ""
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
-					(reference "#PWR05")
+					(reference "#PWR01")
 					(unit 1)
 				)
 			)
@@ -1011,7 +969,7 @@
 	)
 	(symbol
 		(lib_id "SCALES:MountingHole_Pad_M2.5_2.7mm")
-		(at 323.85 205.74 0)
+		(at 328.93 227.33 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom no)
@@ -1020,7 +978,7 @@
 		(fields_autoplaced yes)
 		(uuid "c79d58c9-567a-4476-b5dd-1f247783d1ed")
 		(property "Reference" "H4"
-			(at 326.39 203.1999 0)
+			(at 331.47 224.7899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1029,7 +987,7 @@
 			)
 		)
 		(property "Value" "MountingHole_Pad_M2.5_2.7mm"
-			(at 326.39 205.7399 0)
+			(at 331.47 227.3299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1038,7 +996,7 @@
 			)
 		)
 		(property "Footprint" "MountingHole:MountingHole_2.7mm_M2.5_DIN965_Pad"
-			(at 323.85 205.74 0)
+			(at 328.93 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1047,7 +1005,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 323.85 205.74 0)
+			(at 328.93 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1056,7 +1014,7 @@
 			)
 		)
 		(property "Description" "Mounting Hole with connection as pad named MP"
-			(at 323.85 205.74 0)
+			(at 328.93 227.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1077,7 +1035,7 @@
 		)
 	)
 	(sheet
-		(at 252.73 94.742)
+		(at 252.73 95.25)
 		(size 46.99 82.55)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1092,7 +1050,7 @@
 		)
 		(uuid "075ba521-2c69-4313-b545-104e72dad131")
 		(property "Sheetname" "Microcontroller"
-			(at 252.73 91.948 0)
+			(at 252.73 92.456 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1101,7 +1059,7 @@
 			)
 		)
 		(property "Sheetfile" "microcontroller.kicad_sch"
-			(at 252.73 92.71 0)
+			(at 252.73 93.218 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1110,126 +1068,123 @@
 			)
 		)
 		(pin "MRAM_CTRL{OE,CS,WE}" output
-			(at 299.72 131.572 0)
+			(at 299.72 132.08 0)
 			(uuid "b138d019-69b3-46a8-bf66-60d31be0fdb2")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify right)
 			)
 		)
 		(pin "A[0..20]" output
-			(at 299.72 136.652 0)
+			(at 299.72 137.16 0)
 			(uuid "d3d1a9ff-7bef-4c8d-8496-1ab4f142d6f4")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify right)
 			)
 		)
 		(pin "MRAM_DATA[0..7]" input
-			(at 299.72 141.732 0)
+			(at 299.72 142.24 0)
 			(uuid "7615482f-4b72-4210-bc9e-92f22802946d")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify right)
 			)
 		)
 		(pin "CTRL_R1_[0..4]" output
-			(at 270.51 177.292 270)
+			(at 270.51 177.8 270)
 			(uuid "98d9e3f1-106b-4d96-9b8e-437a9c64578b")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify left)
 			)
 		)
 		(pin "CTRL_R2_[0..4]" output
-			(at 274.32 177.292 270)
+			(at 274.32 177.8 270)
 			(uuid "473e0dc5-f50d-4e1e-9768-29ec6832af5a")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify left)
 			)
 		)
 		(pin "CTRL_EN_[0..4]" output
-			(at 278.13 177.292 270)
+			(at 278.13 177.8 270)
 			(uuid "813a25b7-ac71-4c62-9d7d-326020d70b8d")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify left)
 			)
 		)
-		(pin "RADFET_OUT[0..4]" input
-			(at 281.94 177.292 270)
-			(uuid "7abfe198-b483-4f45-a1da-bd2d58ad9ffa")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
-				)
-				(justify left)
-			)
-		)
-		(pin "I2C0_SCL" output
-			(at 299.72 104.14 0)
+		(pin "I2C0_SCL" bidirectional
+			(at 299.72 104.648 0)
 			(uuid "e259892e-20b6-4773-84e7-bc092d20b13d")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify right)
 			)
 		)
 		(pin "I2C0_SDA" bidirectional
-			(at 299.72 107.95 0)
+			(at 299.72 108.458 0)
 			(uuid "16234d0c-e138-4ca4-9097-245ccbe49704")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify right)
 			)
 		)
-		(pin "Payload_Rx" input
-			(at 252.73 151.13 180)
+		(pin "Payload_Rx" output
+			(at 252.73 149.86 180)
 			(uuid "e2915c2e-8526-45e9-ba41-6ed1badac3a2")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify left)
 			)
 		)
-		(pin "Payload_Tx" input
+		(pin "Payload_Tx" output
 			(at 252.73 147.32 180)
 			(uuid "803ee94d-fc62-490f-8747-309a124ba836")
 			(effects
@@ -1237,6 +1192,20 @@
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "RADFET_OUT[0..4]" output
+			(at 281.94 177.8 270)
+			(uuid "df7f16ca-ceaa-4e08-97b1-8a217e46ebf8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify left)
 			)
@@ -1244,13 +1213,94 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
-					(page "3")
+					(page "2")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 331.4106 139.2392)
+		(at 295.91 52.578)
+		(size 26.67 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 132 0 0.4400)
+		)
+		(uuid "16d11a20-61d0-4977-a7d5-b0c4d2930be3")
+		(property "Sheetname" "Power Tree"
+			(at 295.91 51.8664 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "pwr_tree.kicad_sch"
+			(at 295.91 78.5626 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "I2C0_SCL" bidirectional
+			(at 306.07 77.978 270)
+			(uuid "391e9210-fde4-4812-b86d-74565f0178f1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+					(color 0 0 132 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "I2C0_SDA" bidirectional
+			(at 312.42 77.978 270)
+			(uuid "3f81644d-66a2-4074-85b5-96aa2b0210a3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+					(color 0 0 132 1)
+				)
+				(justify left)
+			)
+		)
+		(pin "VBAT" input
+			(at 295.91 61.468 180)
+			(uuid "9de52d5a-1f14-4175-a3cc-246e8bf0b02e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+					(bold yes)
+					(color 0 0 132 1)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "Payload_Controller_EM"
+				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 311.15 126.238)
 		(size 27.94 22.86)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1266,7 +1316,7 @@
 		)
 		(uuid "3853f2b5-b86c-4f53-9549-ed8b814cc447")
 		(property "Sheetname" "MRAM"
-			(at 331.4106 138.5276 0)
+			(at 311.15 125.5264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1275,7 +1325,7 @@
 			)
 		)
 		(property "Sheetfile" "mram.kicad_sch"
-			(at 331.4106 162.6838 0)
+			(at 311.15 149.6826 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1284,37 +1334,40 @@
 			)
 		)
 		(pin "A[0..20]" input
-			(at 331.4106 150.6692 180)
+			(at 311.15 137.16 180)
 			(uuid "ee671838-0ae7-42c8-84bb-a934974456b5")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify left)
 			)
 		)
 		(pin "MRAM_CTRL{OE,CS,WE}" input
-			(at 331.4106 145.5892 180)
+			(at 311.15 132.08 180)
 			(uuid "dc2caf82-faf0-4715-9276-881161804bf8")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify left)
 			)
 		)
 		(pin "MRAM_DATA[0..7]" input
-			(at 331.4106 155.7492 180)
+			(at 311.15 142.24 180)
 			(uuid "23254729-7296-453d-b8c3-fd0837eeb9cd")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify left)
 			)
@@ -1322,13 +1375,13 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
-					(page "6")
+					(page "5")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 259.08 44.45)
+		(at 259.08 52.578)
 		(size 25.4 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1344,7 +1397,7 @@
 		)
 		(uuid "4cf906e6-065c-4b10-a5a2-987a95214f7a")
 		(property "Sheetname" "Power Input"
-			(at 259.08 43.7384 0)
+			(at 259.08 51.8664 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1353,7 +1406,7 @@
 			)
 		)
 		(property "Sheetfile" "pwr_in.kicad_sch"
-			(at 259.08 70.4346 0)
+			(at 259.08 78.5626 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1361,14 +1414,15 @@
 				(justify left top)
 			)
 		)
-		(pin "V_BATT" input
-			(at 284.48 55.88 0)
-			(uuid "e480e700-2fc0-43a5-bafd-0efa25d225ac")
+		(pin "VBAT" output
+			(at 284.48 61.468 0)
+			(uuid "33286cf1-a5ac-4205-86b5-5c75200ade50")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify right)
 			)
@@ -1376,13 +1430,13 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
-					(page "7")
+					(page "6")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 214.122 143.002)
+		(at 219.71 142.24)
 		(size 18.796 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1398,7 +1452,7 @@
 		)
 		(uuid "7acf6d3b-d272-4af5-ad05-5ed10a438eac")
 		(property "Sheetname" "Flight Computer Interface"
-			(at 214.122 142.2904 0)
+			(at 219.71 141.5284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1407,7 +1461,7 @@
 			)
 		)
 		(property "Sheetfile" "fc_interface.kicad_sch"
-			(at 214.122 156.2866 0)
+			(at 219.71 155.5246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1416,25 +1470,27 @@
 			)
 		)
 		(pin "Payload_Tx" input
-			(at 232.918 147.32 0)
+			(at 238.506 147.32 0)
 			(uuid "9ca37674-878c-484a-ad19-bb733b6f4f6e")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify right)
 			)
 		)
 		(pin "Payload_Rx" input
-			(at 232.918 151.13 0)
+			(at 238.506 149.86 0)
 			(uuid "058a117f-7199-4944-a311-689f60909d61")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify right)
 			)
@@ -1442,91 +1498,13 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
-					(page "5")
+					(page "4")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 300.99 44.45)
-		(size 30.48 25.4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 132 0 0.4400)
-		)
-		(uuid "9a14df13-82ed-42c1-856b-06d9379026ee")
-		(property "Sheetname" "Power Tree"
-			(at 300.99 43.7384 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "power_management.kicad_sch"
-			(at 300.99 70.4346 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "V_BATT" input
-			(at 300.99 55.88 180)
-			(uuid "f558a5b3-a14a-40a8-b104-2714cef8dbe8")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
-				)
-				(justify left)
-			)
-		)
-		(pin "I2C0_SCL" input
-			(at 313.69 69.85 270)
-			(uuid "26e2dcc7-001d-4e89-bfee-eede936c17a3")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
-				)
-				(justify left)
-			)
-		)
-		(pin "I2C0_SDA" input
-			(at 318.77 69.85 270)
-			(uuid "810b2f42-5335-431b-bb09-96e38d482eef")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.254)
-					(bold yes)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "Payload_Controller_EM"
-				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
-					(page "2")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 327.152 100.076)
+		(at 317.5 100.584)
 		(size 20.32 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1542,7 +1520,7 @@
 		)
 		(uuid "ab6c6673-69ff-4cf4-9e80-7aaa96b942b5")
 		(property "Sheetname" "Peripherals"
-			(at 327.152 99.3644 0)
+			(at 317.5 99.8724 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1551,7 +1529,7 @@
 			)
 		)
 		(property "Sheetfile" "perph.kicad_sch"
-			(at 327.152 113.3606 0)
+			(at 317.5 113.8686 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1559,26 +1537,28 @@
 				(justify left top)
 			)
 		)
-		(pin "I2C0_SCL" input
-			(at 327.152 104.14 180)
+		(pin "I2C0_SCL" bidirectional
+			(at 317.5 104.648 180)
 			(uuid "8372c3fe-35f7-4624-96ca-11f476ab40c9")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify left)
 			)
 		)
 		(pin "I2C0_SDA" bidirectional
-			(at 327.152 107.95 180)
+			(at 317.5 108.458 180)
 			(uuid "b485f45d-7503-4e1b-854f-22b490ffb1e3")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify left)
 			)
@@ -1586,19 +1566,18 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
-					(page "9")
+					(page "7")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 258.318 208.28)
+		(at 259.08 190.5)
 		(size 36.83 25.4)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -1608,7 +1587,7 @@
 		)
 		(uuid "e5213e67-1b0d-459a-aee8-ca49d7a32651")
 		(property "Sheetname" "Instrument"
-			(at 257.6064 233.68 90)
+			(at 258.826 189.484 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1617,7 +1596,7 @@
 			)
 		)
 		(property "Sheetfile" "instrument.kicad_sch"
-			(at 295.7326 233.68 90)
+			(at 296.4946 215.9 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1626,49 +1605,53 @@
 			)
 		)
 		(pin "CTRL_R2_[0..4]" input
-			(at 274.32 208.28 90)
+			(at 274.32 190.5 90)
 			(uuid "23c03d14-c6bf-4149-927b-6b1294fc11c0")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify right)
 			)
 		)
 		(pin "CTRL_R1_[0..4]" input
-			(at 270.51 208.28 90)
+			(at 270.51 190.5 90)
 			(uuid "f12a4f20-0d13-44ce-93f6-3547b62fcf8b")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify right)
 			)
 		)
 		(pin "CTRL_EN_[0..4]" input
-			(at 278.13 208.28 90)
+			(at 278.13 190.5 90)
 			(uuid "b25ddc24-8ec5-4aea-8871-c5c7ff35615e")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify right)
 			)
 		)
-		(pin "RADFET_OUT[0..4]" output
-			(at 281.94 208.28 90)
-			(uuid "22e133d9-5790-4cc4-b6d5-efff2b8eb318")
+		(pin "RADFET_OUT[0..4]" input
+			(at 281.94 190.5 90)
+			(uuid "bd894954-13e7-468d-ba74-b161ea79405d")
 			(effects
 				(font
 					(size 1.27 1.27)
 					(thickness 0.254)
 					(bold yes)
+					(color 0 0 132 1)
 				)
 				(justify right)
 			)
@@ -1676,7 +1659,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82"
-					(page "4")
+					(page "3")
 				)
 			)
 		)

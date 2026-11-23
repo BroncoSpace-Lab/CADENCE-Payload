@@ -1,0 +1,18 @@
+.DF51A-4DP-2DSA :1 ;Headers & Wire Housings 4P 2R STRAIGHT HEADER TIN
+SHDR4W60P200X200_2X2_1110X730X870P
+*STM J
+*NGS
+*PLB 1="1" 2="2" 3="3" 4="4"
+*MXP 4
+*DFN DF51A-4DP-2DSA
+~!Manufacturer_Name (Hirose)
+~!Manufacturer_Part_Number (DF51A-4DP-2DSA)
+~!Mouser Part Number (798-DF51A-4DP-2DSA)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Hirose-Connector/DF51A-4DP-2DSA?qs=MLItCLRbWsw154eoU7l7xw%3D%3D)
+~!Arrow Part Number (-)
+~!Arrow Price/Stock (-)
+~!Link Datasheet (https://www.hirose.com/en/product/document?clcode=CL0543-5015-0-00&productname=DF51A-4DP-2DSA&series=DF51&documenttype=2DDrawing&lang=en&documentid=0001126053)
+~!Height (8.7mm)
+~!3D_Model (DF51A-4DP-2DSA)
+DF51A-4DP-2DSA
+1.1!U 3.1!U 2.1!U 4.1!U 

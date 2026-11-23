@@ -412,9 +412,9 @@
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
-      "footprint_filter": "ignore",
+      "footprint_filter": "error",
       "footprint_link_issues": "warning",
-      "four_way_junction": "ignore",
+      "four_way_junction": "warning",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
@@ -431,14 +431,14 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
+      "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
-      "simulation_model_issue": "ignore",
-      "single_global_label": "ignore",
+      "simulation_model_issue": "error",
+      "single_global_label": "error",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "unit_value_mismatch": "error",
@@ -622,7 +622,7 @@
     },
     "net_format_name": "",
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "../../../../../../",
     "space_save_all_events": true,
     "spice_current_sheet_as_root": false,
     "spice_external_command": "spice \"%I\"",
@@ -637,10 +637,6 @@
     [
       "866a965d-c307-40b7-9977-69e77fc0dc82",
       "Root"
-    ],
-    [
-      "9a14df13-82ed-42c1-856b-06d9379026ee",
-      "Power Tree"
     ],
     [
       "075ba521-2c69-4313-b545-104e72dad131",
@@ -665,6 +661,10 @@
     [
       "ab6c6673-69ff-4cf4-9e80-7aaa96b942b5",
       "Peripherals"
+    ],
+    [
+      "16d11a20-61d0-4977-a7d5-b0c4d2930be3",
+      "Power Tree"
     ]
   ],
   "text_variables": {}

@@ -1,0 +1,118 @@
+;Proteus Design Interchange Format
+(PDIF
+ (vendor "SamacSys Limited")
+ (version 1 0)
+ (library
+  (part "DF51A-4DP-2DSA"
+   (description "Headers & Wire Housings 4P 2R STRAIGHT HEADER TIN")
+   (family "CON")
+   (package "SHDR4W60P200X200_2X2_1110X730X870P")
+   (attribute "Datasheet Link" "https://www.hirose.com/en/product/document?clcode=CL0543-5015-0-00&productname=DF51A-4DP-2DSA&series=DF51&documenttype=2DDrawing&lang=en&documentid=0001126053")
+   (attribute "Geometry.Height" "8.7mm")
+   (attribute "Manufacturer_Name" "Hirose")
+   (attribute "Manufacturer_Part_Number" "DF51A-4DP-2DSA")
+   (attribute "Mouser Part Number" "798-DF51A-4DP-2DSA")
+   (attribute "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Hirose-Connector/DF51A-4DP-2DSA?qs=MLItCLRbWsw154eoU7l7xw%3D%3D")
+   (attribute "Arrow Part Number" "")
+   (attribute "Arrow Price/Stock" "")
+   (gate
+    (symbol "DF51A-4DP-2DSA")
+    (pin "1" 1 PS)
+    (pin "3" 3 PS)
+    (pin "2" 2 PS)
+    (pin "4" 4 PS)
+   )
+  )
+  (symbol "DF51A-4DP-2DSA"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 200 100) (pt 600 100) (pt 600 -200) (pt 200 -200) (pt 200 100) (closed))
+   )
+   (terminal
+    (body (symbol "PIN") (pt 0 0) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 0 -100) (rot 0) (mir 0) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 0) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+   (terminal
+    (body (symbol "PIN") (pt 800 -100) (rot 0) (mir X) (visible true))
+    (name (pt 230 0) (rot 0) (just MIDDLE LEFT) (visible true))
+    (number (pt 140 20) (rot 0) (just BOTTOM RIGHT) (visible true)))
+  )
+  (symbol "PIN"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 200 0))))
+  (symbol "PINSHORT"
+   (units THOU)
+   (origin (pt 0 0))
+   (graphic
+    (stroke 10)
+    (path (pt 0 0) (pt 100 0))))
+  (package "SHDR4W60P200X200_2X2_1110X730X870P"
+   (units MM)
+   (layer OCCA
+    (graphic
+     (stroke 0.05)
+     (path
+      (closed true)
+      (pt 4.8 -2.9)
+      (pt -7.1 -2.9)
+      (pt -7.1 5.2)
+      (pt 4.8 5.2)
+      (pt 4.8 -2.9))))
+   (layer TASM
+    (graphic
+     (stroke 0.1)
+     (path
+      (closed true)
+      (pt 4.55 -2.65)
+      (pt -6.85 -2.65)
+      (pt -6.85 4.95)
+      (pt 4.55 4.95)
+      (pt 4.55 -2.65))))
+   (layer TSLK
+    (graphic
+     (stroke 0.2)
+     (path
+      (closed false)
+      (pt 0 -2.65)
+      (pt -6.85 -2.65)
+      (pt -6.85 4.95)
+      (pt 4.55 4.95)
+      (pt 4.55 0))))
+   (leg 1 (pt 0 0) (padstack 1))
+   (leg 2 (pt 0 2) (padstack 0))
+   (leg 3 (pt -2 0) (padstack 0))
+   (leg 4 (pt -2 2) (padstack 0))
+   (padstack 0
+    (hole 1.05)
+    (plated true)
+    (pad (layer TCOP) (round 1.575))
+    (pad (layer INNER) (round 1.575))
+    (pad (layer BCOP) (round 1.575))
+   )
+   (padstack 1
+    (hole 1.05)
+    (plated true)
+    (pad (layer TCOP) (square 1.575))
+    (pad (layer INNER) (round 1.575))
+    (pad (layer BCOP) (square 1.575))
+   )
+   (model "DF51A-4DP-2DSA.stp"
+    (euler 0 0 0)
+    (offset 0 0 0)
+   )
+  )
+ )
+)

@@ -1,0 +1,9 @@
+Manufacturer=Hirose
+PartNumber=DF51A-4DP-2DSA
+PartCategory=Connector
+PackageCategory=Header, Shrouded - Straight PTH Box
+PinCount=4
+Version=1.1
+Released=2021-09-02 06:03:55
+Downloaded=2026-11-22 07:45:33
+3D=Y
