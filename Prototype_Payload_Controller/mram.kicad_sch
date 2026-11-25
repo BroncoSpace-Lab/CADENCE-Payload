@@ -6722,7 +6722,8 @@
 		(uuid "ffb626c7-f88f-4d50-80cd-88733e54a626")
 	)
 	(image
-		(at 468.63 101.854)
+		(at 239.776 140.462)
+		(scale 0.196867)
 		(uuid "4386309c-2585-42e4-a384-c0c98d7ad838")
 		(data "iVBORw0KGgoAAAANSUhEUgAABkEAAAOECAIAAACZ7QHLAAAAA3NCSVQICAjb4U/gAAAACXBIWXMA"
 			"ABJcAAASXAFoxDaJAAAgAElEQVR4nOzdd3xV5f0H8BsygCTsPWTIVgQVVDaICC6sisU96mrVqrXD"
@@ -9325,7 +9326,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01074cb0-1751-420a-b097-e37177817777")
-		(property "Reference" "#PWR0100"
+		(property "Reference" "#PWR097"
 			(at 273.05 53.34 0)
 			(effects
 				(font
@@ -9375,7 +9376,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/3853f2b5-b86c-4f53-9549-ed8b814cc447"
-					(reference "#PWR0100")
+					(reference "#PWR097")
 					(unit 1)
 				)
 			)
@@ -9584,7 +9585,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2f768d74-e86c-47f4-8fd4-6a7f9ca4f0af")
-		(property "Reference" "#PWR097"
+		(property "Reference" "#PWR094"
 			(at 233.68 49.53 0)
 			(effects
 				(font
@@ -9634,7 +9635,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/3853f2b5-b86c-4f53-9549-ed8b814cc447"
-					(reference "#PWR097")
+					(reference "#PWR094")
 					(unit 1)
 				)
 			)
@@ -9651,7 +9652,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "31148577-d294-4339-bb3b-7c971dbc074b")
-		(property "Reference" "#PWR098"
+		(property "Reference" "#PWR095"
 			(at 261.62 53.34 0)
 			(effects
 				(font
@@ -9701,7 +9702,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/3853f2b5-b86c-4f53-9549-ed8b814cc447"
-					(reference "#PWR098")
+					(reference "#PWR095")
 					(unit 1)
 				)
 			)
@@ -10376,7 +10377,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b7e0d5e8-446a-475a-b373-a93936a066da")
-		(property "Reference" "#PWR0101"
+		(property "Reference" "#PWR098"
 			(at 273.05 67.31 0)
 			(effects
 				(font
@@ -10426,7 +10427,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/3853f2b5-b86c-4f53-9549-ed8b814cc447"
-					(reference "#PWR0101")
+					(reference "#PWR098")
 					(unit 1)
 				)
 			)
@@ -10637,7 +10638,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c1d9273b-7ece-4d76-a59e-74f499cc2d50")
-		(property "Reference" "#PWR096"
+		(property "Reference" "#PWR093"
 			(at 233.172 68.58 0)
 			(effects
 				(font
@@ -10687,7 +10688,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/3853f2b5-b86c-4f53-9549-ed8b814cc447"
-					(reference "#PWR096")
+					(reference "#PWR093")
 					(unit 1)
 				)
 			)
@@ -10704,7 +10705,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c7609a35-969a-4e92-8333-56e6c6ed43a2")
-		(property "Reference" "#PWR099"
+		(property "Reference" "#PWR096"
 			(at 261.62 67.31 0)
 			(effects
 				(font
@@ -10754,7 +10755,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/3853f2b5-b86c-4f53-9549-ed8b814cc447"
-					(reference "#PWR099")
+					(reference "#PWR096")
 					(unit 1)
 				)
 			)

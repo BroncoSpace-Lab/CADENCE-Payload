@@ -2159,8 +2159,8 @@
 		(layer "F.Fab")
 		(uuid "9eb2daea-688e-4a77-8e07-ba1b7d35c8c6")
 	)
-	(fp_text user "Designator869"
-		(at -3.3274 -3.937 0)
+	(fp_text user "TMUX7208PWR"
+		(at 0 -3.937 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "6e7be812-f6c0-4a3d-8f36-fa04dcf30eec")

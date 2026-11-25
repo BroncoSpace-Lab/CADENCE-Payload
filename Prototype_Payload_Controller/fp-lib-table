@@ -11,4 +11,5 @@
   (lib (name "BM05B-GHS-TBT (LF)(SN)(N)")(type "KiCad")(uri "${KIPRJMOD}/BM05B-GHS-TBT_LF__SN__N_/BM05B-GHS-TBT (LF)(SN)(N).pretty")(options "")(descr ""))
   (lib (name "DF51A-4DP-2DSA")(type "KiCad")(uri "${KIPRJMOD}/LIB_DF51A-4DP-2DSA/DF51A-4DP-2DSA/KiCad/DF51A-4DP-2DSA.pretty")(options "")(descr ""))
   (lib (name "LT1618EMS#PBF")(type "KiCad")(uri "${KIPRJMOD}/LT1618EMS_PBF/LT1618EMS#PBF.pretty")(options "")(descr ""))
+  (lib (name "SN65C1168ERGYR")(type "KiCad")(uri "${KIPRJMOD}/SN65C1168ERGYR/SN65C1168ERGYR.pretty")(options "")(descr ""))
 )

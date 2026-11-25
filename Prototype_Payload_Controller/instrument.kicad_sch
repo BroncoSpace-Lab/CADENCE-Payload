@@ -2322,16 +2322,6 @@
 		)
 		(uuid "bf22b3cb-d44c-4e9c-ac14-ef3ccab57c58")
 	)
-	(text "Ferrite Bead Not Advised"
-		(exclude_from_sim no)
-		(at 82.296 189.484 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "c0272be9-f085-4fee-8c7c-1d5a4700ce44")
-	)
 	(text "BM05B-GHS-TBT (LF)(SN)(N)"
 		(exclude_from_sim no)
 		(at 189.23 26.67 0)
@@ -2420,22 +2410,10 @@
 		(uuid "2885fbd5-cbad-42fb-ab31-8065f6fd855e")
 	)
 	(junction
-		(at 76.2 191.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6784d115-47b4-4440-9eed-311119ef7db3")
-	)
-	(junction
 		(at 20.32 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "801ccb75-89f0-4b09-a603-627b651159f5")
-	)
-	(junction
-		(at 85.09 191.77)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "96d5dc86-668d-417b-aee6-e8027554ffe5")
 	)
 	(junction
 		(at 118.11 111.76)
@@ -2857,6 +2835,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 152.4) (xy 39.37 152.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21f00fa2-6a99-4364-9bb3-f948e8775752")
+	)
+	(wire
+		(pts
 			(xy 138.43 64.77) (xy 125.73 64.77)
 		)
 		(stroke
@@ -3017,7 +3005,7 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 162.56) (xy 31.75 162.56)
+			(xy 39.37 162.56) (xy 34.29 162.56)
 		)
 		(stroke
 			(width 0)
@@ -3235,16 +3223,6 @@
 		)
 		(uuid "678aa8d0-97ad-462c-86bd-b3ae15bd35f6")
 	)
-	(wire
-		(pts
-			(xy 31.75 152.4) (xy 39.37 152.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68209ba2-6b3f-4abd-b306-43f815f338f7")
-	)
 	(polyline
 		(pts
 			(xy 177.038 12.192) (xy 177.038 165.862)
@@ -3337,26 +3315,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 171.45) (xy 38.1 172.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75fa0ead-b770-4503-8d9f-3bf5ced12b83")
-	)
-	(wire
-		(pts
-			(xy 85.09 191.77) (xy 95.25 191.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "78f2d79f-2b31-4548-9980-e3b5377789a8")
-	)
-	(wire
-		(pts
 			(xy 20.32 106.68) (xy 20.32 107.95)
 		)
 		(stroke
@@ -3434,6 +3392,16 @@
 			(type default)
 		)
 		(uuid "827d55b0-8317-4a66-ab52-b91df6b177d9")
+	)
+	(wire
+		(pts
+			(xy 39.37 170.18) (xy 39.37 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83e6e814-4be1-4831-b5e5-7b40c4b5dd46")
 	)
 	(wire
 		(pts
@@ -3677,7 +3645,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 157.48) (xy 39.37 157.48)
+			(xy 34.29 157.48) (xy 39.37 157.48)
 		)
 		(stroke
 			(width 0)
@@ -3927,23 +3895,13 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 171.45) (xy 38.1 171.45)
+			(xy 39.37 170.18) (xy 34.29 170.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "db6a9030-32de-4865-aad6-c2bb6e1da6a1")
-	)
-	(wire
-		(pts
-			(xy 67.31 191.77) (xy 76.2 191.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dce94c21-7b62-4c89-85f5-94be9ecb3f6f")
 	)
 	(bus
 		(pts
@@ -4027,16 +3985,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 191.77) (xy 85.09 191.77)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f4d4efd9-90de-4017-93f8-d2ba6cf29c41")
-	)
-	(wire
-		(pts
 			(xy 104.14 55.88) (xy 116.078 55.88)
 		)
 		(stroke
@@ -4076,7 +4024,8 @@
 		(uuid "ffff29d7-3602-4e6e-a07b-1f818e24ff4e")
 	)
 	(image
-		(at 478.79 114.046)
+		(at 266.446 176.276)
+		(scale 0.101457)
 		(uuid "3025c471-1aab-4067-814a-7facee054809")
 		(data "iVBORw0KGgoAAAANSUhEUgAABkEAAAOECAIAAACZ7QHLAAAAA3NCSVQICAjb4U/gAAAACXBIWXMA"
 			"ABJcAAASXAFoxDaJAAAgAElEQVR4nOzdZ3gVVf4H8EmlhN57R4pIE0UUURR77671b1/L2l1Fd9W1"
@@ -9474,7 +9423,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0307e37e-e791-4692-92e3-8c19d7766a36")
-		(property "Reference" "#PWR087"
+		(property "Reference" "#PWR083"
 			(at 261.62 83.82 0)
 			(effects
 				(font
@@ -9524,7 +9473,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR087")
+					(reference "#PWR083")
 					(unit 1)
 				)
 			)
@@ -9540,7 +9489,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "03a6040f-b767-4f3e-aff4-3325d2a605fe")
-		(property "Reference" "#PWR081"
+		(property "Reference" "#PWR077"
 			(at 204.47 87.63 0)
 			(effects
 				(font
@@ -9590,7 +9539,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR081")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -9605,7 +9554,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "04211f8a-300e-4e2b-85ac-33158a848def")
-		(property "Reference" "#PWR061"
+		(property "Reference" "#PWR057"
 			(at 17.78 200.66 0)
 			(effects
 				(font
@@ -9655,7 +9604,72 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR061")
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 34.29 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "10fc5d96-587d-4773-92e7-8fe1317f7937")
+		(property "Reference" "#PWR062"
+			(at 34.29 163.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 37.338 159.766 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 34.29 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "de4e2b8f-cfd3-4ff5-9b82-634519f59fa2")
+		)
+		(instances
+			(project "Payload_Controller_EM"
+				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
+					(reference "#PWR062")
 					(unit 1)
 				)
 			)
@@ -9686,7 +9700,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 47.2948 185.42 0)
 			(effects
 				(font
@@ -9799,71 +9813,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 38.1 172.72 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "236f21cd-af9e-4da4-86b4-69c5d7baf462")
-		(property "Reference" "#PWR068"
-			(at 38.1 179.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 41.91 174.498 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.1 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 38.1 172.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7ad92cd9-46b4-4f42-8b1b-e53a53aea063")
-		)
-		(instances
-			(project "Payload_Controller_EM"
-				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR068")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VDD")
 		(at 97.79 92.71 0)
 		(unit 1)
@@ -9873,7 +9822,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2a13884e-c1ab-413c-a3cb-3b7f75c21282")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR068"
 			(at 97.79 96.52 0)
 			(effects
 				(font
@@ -9923,7 +9872,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR072")
+					(reference "#PWR068")
 					(unit 1)
 				)
 			)
@@ -10087,7 +10036,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2e371c74-6d18-43a4-bc62-249168d10c35")
-		(property "Reference" "#PWR082"
+		(property "Reference" "#PWR078"
 			(at 204.47 127 0)
 			(effects
 				(font
@@ -10137,72 +10086,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR082")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 67.31 191.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "2e4cd168-f0ff-43cf-9e34-9e1c3139a909")
-		(property "Reference" "#PWR0151"
-			(at 67.31 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "DGND"
-			(at 71.374 193.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 67.31 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 67.31 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 67.31 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1c53bf9d-5fd3-4554-b88b-cc2a45ca03cb")
-		)
-		(instances
-			(project "Payload_Controller_EM"
-				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR0151")
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
@@ -10288,7 +10172,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "445b9dfd-ff4f-45a3-a82e-470d93663a90")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR071"
 			(at 118.11 92.71 0)
 			(effects
 				(font
@@ -10338,7 +10222,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR075")
+					(reference "#PWR071")
 					(unit 1)
 				)
 			)
@@ -10353,7 +10237,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "44bbb254-3821-4228-8f27-5f88a62a8de7")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR069"
 			(at 97.79 106.68 0)
 			(effects
 				(font
@@ -10403,7 +10287,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR073")
+					(reference "#PWR069")
 					(unit 1)
 				)
 			)
@@ -10419,7 +10303,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47b84d24-fc98-4baf-bf9f-ab9aadf16562")
-		(property "Reference" "#PWR088"
+		(property "Reference" "#PWR084"
 			(at 261.62 162.56 0)
 			(effects
 				(font
@@ -10469,7 +10353,7 @@
 		(instances
 			(project ""
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR088")
+					(reference "#PWR084")
 					(unit 1)
 				)
 			)
@@ -10589,15 +10473,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 31.75 162.56 0)
+		(at 34.29 162.56 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "52baa7e8-306e-409a-913d-1a25ec5e4818")
-		(property "Reference" "#PWR067"
-			(at 31.75 168.91 0)
+		(property "Reference" "#PWR063"
+			(at 34.29 168.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10605,8 +10489,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "REFGND"
-			(at 36.576 164.846 0)
+		(property "Value" "GND"
+			(at 37.338 164.846 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10614,7 +10498,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 31.75 162.56 0)
+			(at 34.29 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10623,7 +10507,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 31.75 162.56 0)
+			(at 34.29 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10632,7 +10516,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 31.75 162.56 0)
+			(at 34.29 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10646,7 +10530,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR067")
+					(reference "#PWR063")
 					(unit 1)
 				)
 			)
@@ -10661,7 +10545,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "536878f2-a2df-4464-b43e-31ceac70ba9f")
-		(property "Reference" "#PWR064"
+		(property "Reference" "#PWR060"
 			(at 29.21 158.75 0)
 			(effects
 				(font
@@ -10711,7 +10595,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR064")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -10811,7 +10695,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 16.8148 185.42 0)
 			(effects
 				(font
@@ -10880,7 +10764,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric"
 			(at 20.32 101.6 0)
 			(effects
 				(font
@@ -10924,6 +10808,71 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 34.29 152.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "641e0c9a-92d2-4fb9-b3b2-ba4475ad2ee5")
+		(property "Reference" "#PWR061"
+			(at 34.29 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 37.338 154.686 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 34.29 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "cea8937c-c230-40e2-9133-a66594b230ca")
+		)
+		(instances
+			(project "Payload_Controller_EM"
+				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
+					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 85.09 100.33 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10931,7 +10880,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6596aeb8-9cc7-42f9-bb33-55625fd62eb6")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR067"
 			(at 85.09 106.68 0)
 			(effects
 				(font
@@ -10981,7 +10930,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR071")
+					(reference "#PWR067")
 					(unit 1)
 				)
 			)
@@ -11179,7 +11128,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7bf434bd-b3cd-4c70-81e3-02fb91d4e502")
-		(property "Reference" "#PWR084"
+		(property "Reference" "#PWR080"
 			(at 207.01 29.21 0)
 			(effects
 				(font
@@ -11229,72 +11178,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR084")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 76.2 191.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8601323c-c258-4e90-88d7-74a6825034ff")
-		(property "Reference" "#PWR0152"
-			(at 76.2 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "AGND"
-			(at 80.264 193.294 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 76.2 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 76.2 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cf563a8e-4d9d-40ce-8dfb-c3253bd0f1f3")
-		)
-		(instances
-			(project "Payload_Controller_EM"
-				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR0152")
+					(reference "#PWR080")
 					(unit 1)
 				)
 			)
@@ -11310,7 +11194,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "86563e84-10d1-47b9-836d-24ee40e6921f")
-		(property "Reference" "#PWR086"
+		(property "Reference" "#PWR082"
 			(at 260.35 123.19 0)
 			(effects
 				(font
@@ -11360,7 +11244,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR086")
+					(reference "#PWR082")
 					(unit 1)
 				)
 			)
@@ -11376,7 +11260,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8e300caf-0ccc-479a-a20f-d4cf67606e9f")
-		(property "Reference" "#PWR062"
+		(property "Reference" "#PWR058"
 			(at 20.32 102.87 0)
 			(effects
 				(font
@@ -11426,7 +11310,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR062")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -11441,7 +11325,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "94e2cc76-0a3d-4c1d-bf41-16909395b9c3")
-		(property "Reference" "#PWR063"
+		(property "Reference" "#PWR059"
 			(at 20.32 114.3 0)
 			(effects
 				(font
@@ -11491,7 +11375,7 @@
 		(instances
 			(project ""
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR063")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -11507,7 +11391,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9a634352-5736-472a-81fa-e92d5de3bf95")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR076"
 			(at 199.39 146.05 0)
 			(effects
 				(font
@@ -11557,7 +11441,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR080")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -11720,7 +11604,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a4cc62de-2def-48a0-99f5-dc77bc188f55")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR070"
 			(at 114.3 156.21 0)
 			(effects
 				(font
@@ -11770,7 +11654,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR074")
+					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -11778,15 +11662,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 95.25 191.77 0)
+		(at 34.29 170.18 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "a58b8031-808a-4d91-9ee0-28114dcaafac")
-		(property "Reference" "#PWR0154"
-			(at 95.25 198.12 0)
+		(uuid "a8081be4-aed1-4bfb-9e2c-4341d646d627")
+		(property "Reference" "#PWR064"
+			(at 34.29 176.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11795,7 +11679,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 99.06 193.548 0)
+			(at 37.338 172.466 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11803,7 +11687,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 95.25 191.77 0)
+			(at 34.29 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11812,7 +11696,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 95.25 191.77 0)
+			(at 34.29 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11821,7 +11705,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 95.25 191.77 0)
+			(at 34.29 170.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11830,12 +11714,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "737564fd-ff48-49bf-bf3f-b415ff2c896c")
+			(uuid "b3a79137-6e55-4f0c-a5d6-07558a3eb87c")
 		)
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR0154")
+					(reference "#PWR064")
 					(unit 1)
 				)
 			)
@@ -11851,7 +11735,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ab99d96c-a239-4bd9-a690-b086f19c759e")
-		(property "Reference" "#PWR083"
+		(property "Reference" "#PWR079"
 			(at 204.47 165.1 0)
 			(effects
 				(font
@@ -11901,72 +11785,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR083")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 31.75 152.4 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "af0cbd0f-e9db-47b5-8d36-eaf0e12cf758")
-		(property "Reference" "#PWR065"
-			(at 31.75 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "DGND"
-			(at 35.814 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 31.75 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 31.75 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 31.75 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "981ec5f4-63ed-401a-8532-a0fffe19f024")
-		)
-		(instances
-			(project "Payload_Controller_EM"
-				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR065")
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)
@@ -11999,7 +11818,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 98.7552 100.33 0)
 			(effects
 				(font
@@ -12346,7 +12165,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bede58b9-6cb5-4a9f-9df2-cd0f57fb276f")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR072"
 			(at 118.11 123.19 0)
 			(effects
 				(font
@@ -12396,7 +12215,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR076")
+					(reference "#PWR072")
 					(unit 1)
 				)
 			)
@@ -12411,7 +12230,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "bf05b15f-c1ff-4cf2-80cd-6cbd0394e100")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR065"
 			(at 45.72 200.66 0)
 			(effects
 				(font
@@ -12461,7 +12280,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR069")
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)
@@ -12477,7 +12296,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c6de9d3a-13ee-41f8-a77c-5785df0a7b5f")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR075"
 			(at 198.12 106.68 0)
 			(effects
 				(font
@@ -12527,72 +12346,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR079")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 31.75 157.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d1d30eea-5fc5-4c15-b248-b40cc8733954")
-		(property "Reference" "#PWR066"
-			(at 31.75 163.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "AGND"
-			(at 35.814 159.004 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 31.75 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 31.75 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 31.75 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5f9a7d1c-d410-414a-b148-ae1fdd0e6847")
-		)
-		(instances
-			(project "Payload_Controller_EM"
-				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR066")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -12759,7 +12513,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d87662b3-ac73-458b-98a8-49c41ad5a7a4")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR073"
 			(at 158.75 125.73 0)
 			(effects
 				(font
@@ -12809,7 +12563,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR077")
+					(reference "#PWR073")
 					(unit 1)
 				)
 			)
@@ -12825,7 +12579,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dab69a2b-d83c-4a95-843a-c98990f6de55")
-		(property "Reference" "#PWR085"
+		(property "Reference" "#PWR081"
 			(at 213.36 48.26 0)
 			(effects
 				(font
@@ -12875,7 +12629,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR085")
+					(reference "#PWR081")
 					(unit 1)
 				)
 			)
@@ -12891,7 +12645,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "de8dca1c-f513-4b1c-9172-758e2d7649cb")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR074"
 			(at 198.12 68.58 0)
 			(effects
 				(font
@@ -12941,7 +12695,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR078")
+					(reference "#PWR074")
 					(unit 1)
 				)
 			)
@@ -12957,7 +12711,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed47b12d-bb5a-45fc-947d-5887391c780a")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR066"
 			(at 85.09 96.52 0)
 			(effects
 				(font
@@ -13007,7 +12761,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR070")
+					(reference "#PWR066")
 					(unit 1)
 				)
 			)
@@ -13023,7 +12777,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2fb212e-35a7-4e89-ad47-90ba7705dbf6")
-		(property "Reference" "#PWR089"
+		(property "Reference" "#PWR085"
 			(at 265.43 43.18 0)
 			(effects
 				(font
@@ -13073,7 +12827,7 @@
 		(instances
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR089")
+					(reference "#PWR085")
 					(unit 1)
 				)
 			)
@@ -13104,7 +12858,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 42.2148 185.42 0)
 			(effects
 				(font
@@ -13141,71 +12895,6 @@
 			(project "Payload_Controller_EM"
 				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
 					(reference "C23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 85.09 191.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fb348c39-2dc6-4a10-ac4c-9e4bc189b949")
-		(property "Reference" "#PWR0153"
-			(at 85.09 198.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "REFGND"
-			(at 89.916 194.056 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 85.09 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 85.09 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 85.09 191.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "187d2315-bcdb-4092-9695-9aa01e234f2b")
-		)
-		(instances
-			(project "Payload_Controller_EM"
-				(path "/866a965d-c307-40b7-9977-69e77fc0dc82/e5213e67-1b0d-459a-aee8-ca49d7a32651"
-					(reference "#PWR0153")
 					(unit 1)
 				)
 			)

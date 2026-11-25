@@ -144,17 +144,6 @@
 		(layer "Eco2.User")
 		(uuid "187557b7-af01-40de-b04c-35f01459af2e")
 	)
-	(fp_rect
-		(start -11.25 -16.5)
-		(end 11.25 16.5)
-		(stroke
-			(width 0.2)
-			(type solid)
-		)
-		(fill no)
-		(layer "F.CrtYd")
-		(uuid "12bf0abd-edaf-4c94-b9e7-353ca93d6d9d")
-	)
 	(fp_text user "RADFET Readout Module"
 		(at 0 -17.9 0)
 		(unlocked yes)
